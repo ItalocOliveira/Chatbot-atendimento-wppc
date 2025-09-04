@@ -50,7 +50,7 @@ const mensagensBot: MensagensTipo = {
 };
 
 create({
-    session: 'sessao'
+    session: process.env.WPP_SESSION || 'default'
     })
 .then((client: Whatsapp): Promise<void> => start(client))
 .catch((error) => {
@@ -101,7 +101,7 @@ async function start(client: Whatsapp): Promise<void> {
             case EstadosBot.AGENDANDO_SERVICO:
 
                 // TODO: Implementar lógica de data/hora
-                
+
                 await client.sendText(numUsuario, "Obrigado! Seu agendamento foi confirmado para " + mensagemUsuario);
                 estadosUsuarios.delete(numUsuario);
 

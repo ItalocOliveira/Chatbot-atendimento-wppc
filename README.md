@@ -17,6 +17,7 @@ O bot utiliza uma **máquina de estados** para guiar o usuário desde a saudaç�
 ## 🚀 Tecnologias
 
 - **Node.js** → Ambiente de execução.  
+- **TypeScript** → Linguaguem utilizada para codificação
 - **@wppconnect-team/wppconnect** → Biblioteca de integração com o WhatsApp.  
 
 ---
@@ -24,7 +25,7 @@ O bot utiliza uma **máquina de estados** para guiar o usuário desde a saudaç�
 ## 🛠️ Como Executar
 
 ### Pré-requisitos
-- Node.js (v16+)  
+- Node.js (v18+ recomendado)  
 - NPM ou Yarn  
 
 ### Passos
@@ -34,3 +35,33 @@ O bot utiliza uma **máquina de estados** para guiar o usuário desde a saudaç�
 ```bash
 git clone https://github.com/seu-usuario/seu-repositorio.git
 cd seu-repositorio
+```
+
+2. Instale as dependências:
+
+```bash
+npm install
+```
+
+3. Inicie o bot:
+
+```bash
+npm run dev
+```
+
+4. Autentique:
+
+Escaneie o QR Code que aparecerá no terminal com o seu app do WhatsApp.
+
+---
+
+Após a autenticação, o chatbot estará online e pronto para interagir com os usuários. 🎉
+
+---
+
+## 🔮 Melhorias Futuras:
+
+- Implementar um sistema real de verificação de horários.
+- Integrar com um banco de dados para persistir os agendamentos.
+- Melhorar a validação das entradas do usuário (datas, horários).
+- Adicionar fluxos de cancelamento e reagendamento.
