@@ -1,0 +1,27 @@
+# Arquivos de sessão do WPPConnect (ESSENCIAL IGNORAR!)
+# Impede que sua sessão do WhatsApp seja enviada para o GitHub
+tokens/
+wppconnect_tokens/
+userDataDir/
+
+# Pasta de dependências do Node.js
+# Recriada com 'npm install'
+node_modules/
+
+# Arquivos de ambiente com senhas e segredos
+# Contém informações sensíveis
+.env
+
+# Logs e arquivos de debug
+*.log
+npm-debug.log
+
+# Arquivos de IDEs comuns (opcional, mas bom ter)
+.idea/
+.vscode/
+.vs/
+
+# Arquivos de mídia que podem ser baixados
+/WhatsAppImages
+/uploads
+*.png
